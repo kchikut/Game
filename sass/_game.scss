@@ -1,0 +1,57 @@
+.game {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding: 30px 0;
+    gap:10px;
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 36px 47px;
+        border-radius: 20px;
+        background: $card_bg;
+        scroll-snap-align: start;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    &__title {
+        color: $dark_blue;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: normal;
+        padding-bottom: 70px;
+
+    }
+
+    &__list {
+        list-style: none;
+        color: $list;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 25px;
+        padding-bottom: 30px;
+        padding-left: 0px;
+        &_li {
+            padding-bottom: 15px;
+            padding-left: 0;
+        }
+    }
+}
+
+
+    @media (min-width: 768px) {
+        .game {
+            flex-direction: row;
+            overflow-x: visible;
+        }
+
+        .game__card {
+            width: 30%;
+            margin: 10px;
+        }
+    }

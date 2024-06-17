@@ -1,5 +1,5 @@
 const boardSize = 10;
-const bombCount = 10;
+const bombCount = 15;
 const board = [];
 const gameBoardElement = document.getElementById('minesweeper-board');
 let gameOver = false;

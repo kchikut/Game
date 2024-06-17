@@ -1,0 +1,12 @@
+.btn {
+    
+    text-decoration: none;
+    padding: 13px 14px;
+    border-radius:  25px;
+    background: $btn;
+    color: $white;
+    &:hover{
+        background: $hover;
+    }
+
+}

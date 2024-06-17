@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 30px;
+    padding-bottom: 25px;
+
+    &__text{
+        color: $list;
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+@media (min-width: 768px) {
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

@@ -1,0 +1,32 @@
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    cursor: pointer;border: 1px solid black;
+    &.revealed {
+        background-color: $coral;
+        cursor: default;
+    }
+    &.bomb {
+        background-color: red;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .cell {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+
+}
+
+
+
+
